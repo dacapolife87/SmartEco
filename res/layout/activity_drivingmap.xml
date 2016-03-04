@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <requestFocus />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="@+string/releaseapi"
+        android:clickable="true" >
+        <!--android:apiKey="@+string/releaseapi" -->
+        <!--android:apiKey="@+string/debugapi" -->
+        
+    </com.google.android.maps.MapView>
+    <TextView
+        android:id="@+id/driveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/distanceInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/Facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/facebook"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Drive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="주행시작"
+        android:visibility="visible" />
+
+</RelativeLayout>
